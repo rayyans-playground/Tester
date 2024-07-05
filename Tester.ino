@@ -124,7 +124,7 @@ lcd.print(" "); // Clear the line
 lcd.setCursor(0, 1); // Move cursor to the second line again
 lcd.print(message);
 
-delay(100); // Add a small delay to avoid rapid updates
+delay(100); // Adding a small delay to avoid rapid updates
 }
 void loop5(){
 const int flexPin = A2;
