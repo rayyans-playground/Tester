@@ -36,7 +36,7 @@ void loop1() {
 
   String message;
   
-  if (mappedValue >= 90) {
+  if (mappedValue >= 50) {
     message = " Toilet";
     } 
     else {message = " ";
@@ -54,7 +54,7 @@ void loop1() {
 
 void loop2(){
 const int flexPin = A1;
-int sensorValue = analogRead(flexPin); // Read the analog input from the flex sensor
+int sensorValue = analogRead(flexPin); // Read the analog input from one of the sensors
 int mappedValue = map(sensorValue, 0, 1023, 0, 100); // Map the sensor value to a range (0 to 100%)
 
 Serial.print("Sensor Value: ");
